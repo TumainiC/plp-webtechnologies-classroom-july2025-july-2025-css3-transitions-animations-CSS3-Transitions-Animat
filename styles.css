@@ -1,0 +1,68 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+/* Light vs Dark Mode */
+body.light {
+  background-color: #f9f9f9;
+  color: #222;
+}
+
+body.dark {
+  background-color: #121212;
+  color: #eee;
+}
+
+/* Header */
+header {
+  padding: 2rem;
+}
+
+/* Skills Section */
+.skills {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: #eee;
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  transition: transform 0.3s, background 0.3s;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: scale(1.1);
+  background: #ff6f61;
+  color: white;
+}
+
+/* Interactive Section */
+#box {
+  width: 100px;
+  height: 100px;
+  background: #4caf50;
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+/* Animation triggered */
+.animate {
+  animation: bounce 1s ease-in-out;
+}
+
+/* Keyframes */
+@keyframes bounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}
